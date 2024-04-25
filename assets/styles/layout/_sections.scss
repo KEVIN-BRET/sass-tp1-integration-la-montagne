@@ -1,4 +1,9 @@
 section {
-    height: 500px;
+    width: 100%;
+    max-width: 1200px;
     background: $white;
+    display: flex;
+
+    margin: 0 auto;
+    height: 500px;
 }
