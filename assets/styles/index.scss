@@ -1,1 +1,9 @@
-@import "./settings"
+// settings & reset
+@import "./settings";
+
+// layout
+@import "../styles/layout/header";
+@import "../styles/layout/sections";
+@import "../styles/layout/footer";
+
+// components
