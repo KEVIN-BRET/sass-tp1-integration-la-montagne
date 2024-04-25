@@ -19,6 +19,23 @@ body {
   background: url(../images/bg.jpg) fixed center/cover;
   min-height: 100vh;
 }
+body::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: black;
+  top: 0;
+  left: 0;
+  animation: animBefore 1.5s ease forwards;
+  animation-delay: 0.15s;
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 
 header {
   color: #f2f3f3;
@@ -35,7 +52,18 @@ header .header-top {
   margin: auto;
   text-align: center;
 }
-header .header-top .header-container h1 {
+header .header-top .header-content {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: animHeader 1.5s ease forwards;
+}
+@keyframes animHeader {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+header .header-top .header-content h1 {
   font-family: "Inter-ExtraBold";
   text-transform: uppercase;
   font-size: 4rem;
@@ -44,11 +72,11 @@ header .header-top .header-container h1 {
   margin: auto;
   margin-bottom: 30px;
 }
-header .header-top .header-container p {
+header .header-top .header-content p {
   margin-bottom: 30px;
   font-style: italic;
 }
-header .header-top .header-container .arrow {
+header .header-top .header-content .arrow {
   border: 2px solid #f2f3f3;
   height: 60px;
   width: 60px;

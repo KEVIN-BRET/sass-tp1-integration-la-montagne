@@ -37,4 +37,24 @@ body {
   font-family: "Merriweather-Light", sans-serif;
   background: url(../images/bg.jpg) fixed center/cover;
   min-height: 100vh;
+
+  // animation au chargement
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    top: 0;
+    left: 0;
+    animation: animBefore 1.5s ease forwards;
+    animation-delay: 0.15s;
+
+    @keyframes animBefore {
+      to {
+        opacity: 0;
+        z-index: -1;
+      }
+    }
+  }
 }
