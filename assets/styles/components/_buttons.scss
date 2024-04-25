@@ -1,0 +1,20 @@
+button {
+    cursor: pointer;
+  font-family: "Inter-Bold";
+  background: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: $black;
+  border: 1px solid $black;
+  padding: 10px 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  transition: all 0.2S ease;
+
+  &:hover {
+    background: $black;
+    color: $white;
+    border: 1px solid $black;
+  }
+}

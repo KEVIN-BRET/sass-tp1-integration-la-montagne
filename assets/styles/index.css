@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: "Inter-Regular";
+  src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(../fonts/Inter-Bold.ttf);
+}
+@font-face {
   font-family: "Inter-ExtraBold";
   src: url(../fonts/Inter-ExtraBold.ttf);
 }
@@ -56,6 +64,7 @@ header .header-top .header-content {
   opacity: 0;
   transform: translateY(40px);
   animation: animHeader 1.5s ease forwards;
+  animation-delay: 0.15s;
 }
 @keyframes animHeader {
   to {
@@ -111,7 +120,7 @@ header nav ul li {
   text-align: center;
 }
 header nav .nav-left {
-  font-family: "Inter-ExtraBold";
+  font-family: "Inter-Bold";
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
@@ -150,11 +159,36 @@ header nav .social-networks-nav {
   font-size: 1.2rem;
 }
 
-section {
+main section {
   width: 100%;
   max-width: 1200px;
   background: white;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin: 0 auto;
-  height: 500px;
+}
+main section img {
+  width: 50%;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Inter-Bold";
+  background: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: rgb(23, 23, 23);
+  border: 1px solid rgb(23, 23, 23);
+  padding: 10px 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  transition: all 0.2S ease;
+}
+button:hover {
+  background: rgb(23, 23, 23);
+  color: white;
+  border: 1px solid rgb(23, 23, 23);
 }/*# sourceMappingURL=index.css.map */

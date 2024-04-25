@@ -17,6 +17,7 @@ header {
       opacity: 0;
       transform: translateY(40px);
       animation: animHeader 1.5s ease forwards;
+      animation-delay: 0.15s;
 
       @keyframes animHeader {
         to {
@@ -80,7 +81,7 @@ header {
     }
 
     .nav-left {
-      font-family: "Inter-ExtraBold";
+      font-family: "Inter-Bold";
       font-size: 0.9rem;
       letter-spacing: 1px;
 
