@@ -26,10 +26,11 @@ header {
 
       p {
         margin-bottom: 30px;
+        font-style: italic;
       }
 
       .arrow {
-        border: 1px solid $color1;
+        border: 2px solid $color1;
         height: 60px;
         width: 60px;
         display: flex;
@@ -37,8 +38,58 @@ header {
         justify-content: center;
         margin: 50px auto;
         border-radius: 50%;
-        font-size: 1.2rem
+        font-size: 1.2rem;
       }
+    }
+  }
+
+  nav {
+    background: $color3;
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        cursor: pointer;
+        height: 100%;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          background: $color2;
+          color: $black;
+        }
+      }
+    }
+
+    .sections-nav {
+      font-family: "Inter-ExtraBold";
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+
+      li:nth-child(1) {
+        background: $color2;
+        color: $black;
+      }
+
+      &:not(:first-child):hover li:nth-child(1) {
+        background: transparent;
+        color: $white;
+      }
+    }
+    .social-networks-nav {
+      font-size: 1.2rem;
     }
   }
 }

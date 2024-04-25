@@ -46,9 +46,10 @@ header .header-top .header-container h1 {
 }
 header .header-top .header-container p {
   margin-bottom: 30px;
+  font-style: italic;
 }
 header .header-top .header-container .arrow {
-  border: 1px solid #f2f3f3;
+  border: 2px solid #f2f3f3;
   height: 60px;
   width: 60px;
   display: flex;
@@ -58,8 +59,51 @@ header .header-top .header-container .arrow {
   border-radius: 50%;
   font-size: 1.2rem;
 }
+header nav {
+  background: rgba(243, 243, 243, 0.3098039216);
+  width: 100%;
+  max-width: 1200px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav ul li {
+  cursor: pointer;
+  height: 100%;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+header nav ul li:hover {
+  background: #f3f3f3;
+  color: rgb(23, 23, 23);
+}
+header nav .sections-nav {
+  font-family: "Inter-ExtraBold";
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+header nav .sections-nav li:nth-child(1) {
+  background: #f3f3f3;
+  color: rgb(23, 23, 23);
+}
+header nav .sections-nav:not(:first-child):hover li:nth-child(1) {
+  background: transparent;
+  color: white;
+}
+header nav .social-networks-nav {
+  font-size: 1.2rem;
+}
 
 section {
   height: 500px;
-  background: rgb(241, 241, 241);
+  background: white;
 }/*# sourceMappingURL=index.css.map */
