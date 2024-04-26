@@ -172,8 +172,8 @@ main .main-section {
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-  padding: 60px 120px 40px;
-  border-bottom: 2px solid #e4e4e4;
+  padding: 60px 120px 80px;
+  border-bottom: 1px solid #e4e4e4;
 }
 main .main-section .section-content .date {
   position: relative;
@@ -208,7 +208,7 @@ main .main-section .section-content h2 {
   margin: 0 auto 30px;
 }
 main .main-section .section-content .img-container {
-  margin-bottom: 15px;
+  margin-bottom: 45px;
 }
 main .main-section .section-content .img-container img {
   width: 100%;
@@ -261,7 +261,7 @@ main .secondary-section .half-section p {
   margin: 0 auto 30px;
 }
 main .secondary-section .half-section.left {
-  border-right: 2px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
 }
 
 footer {
@@ -269,16 +269,15 @@ footer {
   width: 100%;
   max-width: 1200px;
   display: flex;
-  align-items: center;
   justify-content: center;
   text-align: center;
   color: grey;
   margin: 0 auto 70px;
 }
 footer .footer-left {
-  padding: 50px 50px 20px;
-  border-right: 2px solid #e4e4e4;
   width: 50%;
+  padding: 60px 50px 30px;
+  border-right: 1px solid #e4e4e4;
 }
 footer .footer-left form {
   width: 100%;
@@ -289,7 +288,7 @@ footer .footer-left form {
 footer .footer-left form label {
   font-family: "Inter-Bold";
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
@@ -311,6 +310,7 @@ footer .footer-left form textarea {
   color: grey;
   border-radius: 3px;
   resize: none;
+  width: 100%;
   border: 1px solid #e4e4e4;
   border-radius: 3px;
   padding: 10px;
@@ -324,11 +324,51 @@ footer .footer-left button {
   margin: 30px 0;
 }
 footer .footer-left button:hover {
-  background: grey;
   color: white;
 }
 footer .footer-right {
   width: 50%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+footer .footer-right .contact-item {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  justify-items: start;
+  border-bottom: 1px solid #e4e4e4;
+}
+footer .footer-right .contact-item .title {
+  padding: 50px;
+  text-transform: uppercase;
+  font-family: "Inter-Bold";
+  font-size: 0.8rem;
+}
+footer .footer-right .contact-item .content {
+  font-size: 0.8rem;
+  padding: 10px;
+}
+footer .footer-right .contact-item .content p {
+  margin-bottom: 10px;
+  text-align: left;
+}
+footer .footer-right .contact-item .content.social {
+  display: flex;
+  gap: 15px;
+}
+footer .footer-right .contact-item .content.social i {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.15s ease;
+}
+footer .footer-right .contact-item .content.social i:hover {
+  font-size: 1.1rem;
 }
 
 button {
@@ -341,8 +381,8 @@ button {
   letter-spacing: 1px;
   color: rgb(23, 23, 23);
   border: 1px solid rgb(23, 23, 23);
-  padding: 10px 30px;
-  margin: 30px auto;
+  padding: 15px 30px;
+  margin: 0px auto;
   transition: all 0.2s ease;
 }
 button:hover {

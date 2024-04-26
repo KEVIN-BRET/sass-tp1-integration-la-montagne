@@ -3,17 +3,16 @@ footer {
   width: 100%;
   max-width: 1200px;
   display: flex;
-  align-items: center;
+  //   align-items: center;
   justify-content: center;
   text-align: center;
   color: $grey;
   margin: 0 auto 70px;
 
   .footer-left {
-    padding: 50px 50px 20px;
-
-    border-right: 2px solid $color4;
     width: 50%;
+    padding: 60px 50px 30px;
+    border-right: 1px solid $color4;
 
     form {
       width: 100%;
@@ -25,7 +24,7 @@ footer {
       label {
         font-family: "Inter-Bold";
         text-transform: uppercase;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         letter-spacing: 2px;
         margin-bottom: 20px;
       }
@@ -39,23 +38,24 @@ footer {
         border: 1px solid $color4;
         border-radius: 3px;
         padding: 10px;
-        
+
         &:focus {
-            border: 1px solid $grey;
+          border: 1px solid $grey;
         }
-    }
-    
-    textarea {
+      }
+
+      textarea {
         background: $color1;
         color: $grey;
         border-radius: 3px;
         resize: none;
+        width: 100%;
         border: 1px solid $color4;
         border-radius: 3px;
         padding: 10px;
-        
+
         &:focus {
-            border: 1px solid $grey;
+          border: 1px solid $grey;
         }
       }
     }
@@ -66,7 +66,7 @@ footer {
       margin: 30px 0;
 
       &:hover {
-        background: $grey;
+        // background: $grey;
         color: $white;
       }
     }
@@ -74,5 +74,57 @@ footer {
 
   .footer-right {
     width: 50%;
+
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+
+    .contact-item {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      align-items: center;
+      justify-items: start;
+      border-bottom: 1px solid $color4;
+
+      .title {
+        // width: 25%;
+        padding: 50px;
+        text-transform: uppercase;
+        font-family: "Inter-Bold";
+        font-size: 0.8rem;
+      }
+
+      .content {
+        // width: 75%;
+        font-size: 0.8rem;
+        padding: 10px;
+
+        p {
+          margin-bottom: 10px;
+          text-align: left;
+        }
+
+        &.social {
+            display: flex;
+            gap: 15px;
+
+            i {
+                cursor: pointer;
+                height: 40px;
+                width: 40px;
+                border: 1px solid $grey;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.15s ease;
+
+                &:hover {
+                    font-size: 1.1rem;
+                }
+            }
+
+        }
+      }
+    }
   }
 }
