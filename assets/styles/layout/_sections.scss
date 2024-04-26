@@ -72,7 +72,7 @@ main {
     margin: 0 auto;
 
     .half-section {
-        width: 100%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -80,6 +80,7 @@ main {
       padding: 60px 60px 50px;
 
       .date {
+        color: $grey;
         font-size: 0.9rem;
         margin-bottom: 20px;
       }
@@ -93,14 +94,14 @@ main {
         margin-bottom: 20px;
       }
       .img-container {
-          
-          img {
-            margin-bottom: 30px;
+        img {
+          margin-bottom: 30px;
           width: 100%;
         }
       }
 
       p {
+        color: $grey;
         font-size: 0.8rem;
         max-width: 550px;
         line-height: 30px;
@@ -113,5 +114,3 @@ main {
     }
   }
 }
-
-

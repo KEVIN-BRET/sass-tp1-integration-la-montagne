@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  outline: none;
 }
 
 @font-face {
@@ -235,6 +236,7 @@ main .secondary-section .half-section {
   padding: 60px 60px 50px;
 }
 main .secondary-section .half-section .date {
+  color: grey;
   font-size: 0.9rem;
   margin-bottom: 20px;
 }
@@ -252,6 +254,7 @@ main .secondary-section .half-section .img-container img {
   width: 100%;
 }
 main .secondary-section .half-section p {
+  color: grey;
   font-size: 0.8rem;
   max-width: 550px;
   line-height: 30px;
@@ -259,6 +262,73 @@ main .secondary-section .half-section p {
 }
 main .secondary-section .half-section.left {
   border-right: 2px solid #e4e4e4;
+}
+
+footer {
+  background: #f2f3f3;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: grey;
+  margin: 0 auto 70px;
+}
+footer .footer-left {
+  padding: 50px 50px 20px;
+  border-right: 2px solid #e4e4e4;
+  width: 50%;
+}
+footer .footer-left form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer .footer-left form label {
+  font-family: "Inter-Bold";
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+footer .footer-left form input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  background: #f2f3f3;
+  color: grey;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  padding: 10px;
+}
+footer .footer-left form input:focus {
+  border: 1px solid grey;
+}
+footer .footer-left form textarea {
+  background: #f2f3f3;
+  color: grey;
+  border-radius: 3px;
+  resize: none;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  padding: 10px;
+}
+footer .footer-left form textarea:focus {
+  border: 1px solid grey;
+}
+footer .footer-left button {
+  color: grey;
+  border-color: grey;
+  margin: 30px 0;
+}
+footer .footer-left button:hover {
+  background: grey;
+  color: white;
+}
+footer .footer-right {
+  width: 50%;
 }
 
 button {

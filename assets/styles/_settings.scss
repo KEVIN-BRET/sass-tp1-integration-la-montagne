@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  outline: none;
 }
 
 @font-face {
@@ -35,6 +36,7 @@ $color2: #f3f3f3; // gris très clair
 $color3: #f3f3f34f; // menu transparent
 $color4: #e4e4e4; // before/after date
 $white: white;
+$grey: grey;
 $black: rgb(23, 23, 23);
 
 // mixins
