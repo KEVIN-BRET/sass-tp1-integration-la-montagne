@@ -114,3 +114,34 @@ main {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    .main-section {
+      padding: 50px 30px 60px;
+
+      .section-content {
+        .date {
+          position: relative;
+          display: block;
+          margin: 0 auto 40px;
+
+          &::before {
+            width: 30%;
+          }
+
+          &::after {
+            width: 30%;
+          }
+        }
+        h2 {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .secondary-section {
+      flex-direction: column;
+    }  
+  }
+}

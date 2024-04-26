@@ -58,7 +58,7 @@ header .header-top {
   height: 100%;
   display: flex;
   align-items: center;
-  margin: auto;
+  margin: auto 15px;
   text-align: center;
 }
 header .header-top .header-content {
@@ -160,6 +160,15 @@ header nav .social-networks-nav {
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 768px) {
+  header .header-top .header-content h1 {
+    font-size: 2rem;
+  }
+  header nav .nav-left li {
+    padding: 0px 10px;
+    font-size: 0.8rem;
+  }
+}
 main {
   margin-bottom: 30px;
 }
@@ -264,6 +273,28 @@ main .secondary-section .half-section.left {
   border-right: 1px solid #e4e4e4;
 }
 
+@media screen and (max-width: 768px) {
+  main .main-section {
+    padding: 50px 30px 60px;
+  }
+  main .main-section .section-content .date {
+    position: relative;
+    display: block;
+    margin: 0 auto 40px;
+  }
+  main .main-section .section-content .date::before {
+    width: 30%;
+  }
+  main .main-section .section-content .date::after {
+    width: 30%;
+  }
+  main .main-section .section-content h2 {
+    font-size: 2rem;
+  }
+  main .secondary-section {
+    flex-direction: column;
+  }
+}
 footer {
   background: #f2f3f3;
   width: 100%;
@@ -278,6 +309,7 @@ footer .footer-left {
   width: 50%;
   padding: 60px 50px 30px;
   border-right: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
 }
 footer .footer-left form {
   width: 100%;
@@ -371,6 +403,18 @@ footer .footer-right .contact-item .content.social i:hover {
   font-size: 1.1rem;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .footer-left {
+    width: 100%;
+    border-right: none;
+  }
+  footer .footer-right {
+    width: 100%;
+  }
+}
 button {
   display: block;
   cursor: pointer;

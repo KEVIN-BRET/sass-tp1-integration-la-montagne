@@ -10,7 +10,7 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
-    margin: auto;
+    margin: auto 15px;
     text-align: center;
 
     .header-content {
@@ -25,7 +25,7 @@ header {
           transform: translateY(0);
         }
       }
-      
+
       h1 {
         font-family: "Inter-ExtraBold";
         text-transform: uppercase;
@@ -127,6 +127,27 @@ header {
 
     .social-networks-nav {
       font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .header-top {
+      .header-content {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    nav {
+      .nav-left {
+        li {
+          padding: 0px 10px;
+          font-size: 0.8rem;
+        }
+      }
     }
   }
 }
